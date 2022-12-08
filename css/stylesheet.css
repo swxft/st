@@ -1,0 +1,161 @@
+@import url("https://use.typekit.net/leq7bsm.css");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&display=swap');
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'h h h'
+      'm m s'
+      'm m s';
+  }
+
+  .main {
+    grid-area: m;
+  }
+
+  .intro {
+    grid-area: h;
+  }
+  .sidebar {
+    grid-area: s;
+  }
+
+  .preamble {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      't t t'
+      'p1 p2 p3';
+  }
+
+  .explanation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      't t'
+      'p1 p2';
+  }
+
+  .explanation-title {
+    grid-area: t;
+  }
+
+        .explanation-para1 {
+    grid-area: p1;
+  }
+
+        .explanation-para2 {
+    grid-area: p2;
+  }
+
+  @media screen and (max-width: 800px) {
+    .page-wrapper {
+      grid-template-areas:
+        'h h h'
+        'm m m'
+        's s s';
+    }
+  }
+body {
+    background-color: black;
+    font-size: 20px;
+    color: #FFECD6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: maroon;
+}
+h1, h2, h3, h4 {
+    font-family: itc-benguiat, serif;
+}
+h1 {
+    font-size: 9rem;
+    font-weight: 500;
+    font-style: normal;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 0 0 1px green, 0 0 20px brown;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px red;
+    line-height: 7rem;
+    
+}
+
+header{
+    padding-top: 15%;
+}
+
+#zen-intro {
+    padding: 4%;
+}
+h2 {
+    text-align: center;
+}
+/* A demonstration of what  */
+#zen-summary {
+    margin-top: 20%;
+}
+
+#zen-intro, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements{
+    min-height: 35vh;
+    padding: 4%;
+    padding-top: 0;
+}
+/*  The Road to Enlightenment */
+#zen-preamble {
+    color: #FFECD6;
+    /* padding: 20px; */
+    height: 10vh;
+}
+
+#zen-benefits { 
+    background-color: peachpuff;
+    color: brown;
+    background-repeat: repeat-x;
+}
+
+/* So What is This About? */
+#zen-explanation { 
+    padding: 4%;
+    background-color: blanchedalmond;
+    color: rgb(49, 169, 157);
+    
+}
+#zen-explanation h3{
+    color: rgb(138, 98, 34);
+    border-radius: 10px;
+} 
+/* Participation */
+#zen-participation {
+    background-color: beige;
+    background-position: right 35% bottom 45%;
+    background-image: url(imgs/argyle.png);
+    background-repeat: no-repeat;
+    color: black;
+}
+
+#zen-participation h3 {
+    padding: 20px;
+    font-size: larger;
+    background-image: url(imgs/hero-bg.png);
+    font-family: 'Kaushan Script', cursive;
+    color: red;
+}
+#zen-requirements {
+    background-color: #060b68;
+    padding: 4%
+}
+footer{
+    background-color: gainsboro;
+    color:black;
+}
+aside {
+    padding: 4%;
+}
